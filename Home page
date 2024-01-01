@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>menu list</title>
+</head>
+<style>
+
+    body{
+      background-image:  url(4.jpg);
+      background-position: center;
+      width: auto;
+      height: auto;
+      border-radius: 20%;
+      font-family: Arial, Helvetica, sans-serif;
+      color: green;
+      font-size: 30px;
+      background-repeat:round;
+    
+    .slider-container {
+        position: left;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        height: 50px;
+        border-radius: 30px;
+      }
+  
+      
+      .background-container {
+       position: relative;
+       height: 100vh;
+        overflow: hidden;
+      } 
+
+      .content {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+         padding: 20px;
+          color: #180303;
+}
+h1{
+  color: rgba(20, 20, 133, 0.288);
+  border-radius: 30%;
+  box-sizing: border-box;
+}
+
+ }
+ .slider-container {
+        position: left;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        height: 50px;
+        border-radius: 30px;
+      }
+  
+      .slider-button {
+        background-color: blue; /* Set your desired background color */
+        color: rgb(172, 26, 26);
+        border: none;
+        padding: 15px;
+        text-align: left;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 30px;
+      }
+  
+      .slider-icon {
+        width: 30px;
+        height: 3px;
+        background-color: wheat;
+        margin: 6px 0;
+        transition: 1s;
+      }
+  
+      .slider-content {
+        position: fixed;
+        top: 0;
+        left: -250px; /* Initially off-screen */
+        height: 100%;
+        width: 250px;
+        background-color: blue; /* Set your desired background color */
+        padding-top: 50px;
+        transition: 0.5s;
+        z-index: 999;
+      }
+  
+      .slider-content a {
+        padding: 15px;
+        text-decoration: left;
+        font-size: 18px;
+        color: white;
+        display:table-footer-group;
+        text-align: left;
+      }
+  </style>
+</head>
+<body style="background-color: aqua;">
+
+  <button class="slider-button" onclick="toggleSlider()">
+    <div class="slider-icon"></div>
+    <div class="slider-icon"></div>
+    <div class="slider-icon"></div>
+    <div class="slider-icon"></div>
+    </button>
+    </div>
+    
+    <div class="slider-content">
+    <a href="contact" onclick="go('contact')">Contact Us</a>
+    <a href="about us" onclick="go('about')">About Us</a>
+    <a href="privacy policy" onclick="go('privacy')">Privacy Policy</a>
+    </div>
+
+<h1>
+  *Welcome to our organization Example*<br></h1>
+  
+ <p>&nbsp;&nbsp;Our organization relies on providing the enhansive and productivity to targeted goals with our scholars.<br><br></p>
+  
+ <h2> *Our Services*<br></h2>
+  
+   <p> &nbsp;&nbsp;main services or products is to provide quality as well quantity experience,knowledge and skills which will enables our scholars to enter the world class competitive market to be employed or starting the own bussiness running <br><br></p>
+  
+  
+  <h3>*Contact Us*<br></h3>
+  <p> <a href="contact">contact us</a></p>
+  <br><br>
+
+  &nbsp;&nbsp;&nbsp;<h4><a href="form.html">CLICK HERE TO STARTUP REGISTRATION</a></h4>
+<br><br>
+</body>
+<footer style="color: rgb(44, 223, 21); background-color: black; width: 350%; padding: 20px;">
+    <p0>Web Development &copy; 2023 All right reserved</p0>
+</footer>
+<script>
+  function toggleSlider() {
+    var sliderContent = document.querySelector('.slider-content');
+    if (sliderContent.style.left == "0px") {
+      sliderContent.style.left = "-250px";
+    } else {
+      sliderContent.style.left = "0px";
+    }
+    }
+    
+    function navigate(page) {
+    // You can add logic here to navigate to the respective pages or perform actions
+    alert("go to " + page);
+    }
+</script>
+</html>
